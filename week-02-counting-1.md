@@ -82,7 +82,35 @@ comes only in green and black. How many different shirt does a
 souvenir shop have to stock to have at least one of each available 
 size and color of the T-shirt?
 
-## The Pigeonhole Principel
+## The Pigeonhole Principle
+
+**Theorem 1: The Pigeonhole Principle**       
+If $k$ is a positive integer and $k+1$ or more objects are placed into $k$
+boxes, then there is at least one box containing two or more of the objects.
+
+**Proof**:  We prove the pigeonhole principle using a proof by contraposition
+($(p \rightarrow q) \leftrightarrow (\neg q \rightarrow \neg p)$).
+
+$p = $ $k$ is a positive integer and $k+1$ or more objects are placed into 
+  $k$ boxes.     
+$q = $ there is at least one box containing two or more of the objects.     
+
+Suppose that none of the $k$ boxes contains more than one object ($\neg q$). 
+Then the total number of objects would be at most $k$. This is a contradiction, 
+because are at least $k+1$ objects. Therefore, our assumption that $\neg q$ is true
+must be wrong and we have $q$ is true.
+
+
+**Corollary 1**    
+A function $f$ from a set with $k+1$ or more elements to a set with $k$
+elements is not one-to-one.
+
+**Proof**: Suppose that for each element $y$ in the codomain of $f$ we have
+a box that contains all elements $x$ of the domain of $f$ such that $f(x) = y$.
+Because the domain contains $k+1$ or more elements and the codomain contains
+only $k$ elements, the pigeonhole principle tells us that one of these boxes
+contains two or more elements $x$ of the domain. This means that $f$ cannot be
+one-to-one.
 
 
 
@@ -143,14 +171,19 @@ selection of $r$ elements from the set.
 
 Permutations with repetitions and combination with repetitions, 
 
-
 ### Example 1
+How many strings of length $r$ can be formed from the uppercase letters of the
+English alphabet?
 
 ### Theorem 1
 > The number of $r$-permutations of a set of $n$ objects
 > with repetition allowed is $n^r$
 
-### Example 2
+### Example 2   
+How many ways are there to select four pieces of fruit from a bowl containing 
+apples, oranges, and pears if the order in which the pieces are selected 
+does not matter, only the type of fruit and not the individual piece matters, 
+and there are at least four pieces of each type of fruit in the bowl?
 
 ### Theorem 2
 > There are $C(n+r -1, r) = C(n+r-1, n-1)$ $r$-combinations
@@ -167,7 +200,7 @@ Repetition.
 | $r$-combinations | Yes     | $\dfrac{(n+r-1)!}{r!(n-1)!}$ |
 
 
-Permutations with indistinguishable objects
+### Permutations with indistinguishable objects
 
 ### Example 7 
 How many different strings can be made by reordering the letters
@@ -182,3 +215,8 @@ of the word _SUCCESS_?
 >  \frac{n!}{n_1! n_2! \cdots n_k!}
 > $$
 
+### Distributing objects into boxes
+- distinguishable objects and distinguishable boxes
+- indistinguishable objects and distinguishable boxes
+- distinguishable objects and indistinguishable boxes
+- Indistinguishable objects and indistinguishable boxes

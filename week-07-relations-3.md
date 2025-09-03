@@ -1,0 +1,1 @@
+Read (Denning, 1982) - Cryptography and Data Security Chapter 5 - Information Flow Controls

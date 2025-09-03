@@ -14,7 +14,7 @@ Please click the following hyperlink to access the slide.
 
 * [Week 09 - ]
 * [Week 10 - ]
-* [Week 11- ]
+* [Week 11 - ]
 * [Week 12 - ]
 * [Week 13 - ]
 * [Week 14 - ]
