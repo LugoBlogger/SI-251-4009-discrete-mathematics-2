@@ -4,18 +4,17 @@ your ITK student e-mail account.
 Please click the following hyperlink to access the slide. 
 
 * [Week 01 - Introduction](https://drive.google.com/file/d/1bpriay4pW_SsFgucaO0YgjKpE1bd6Zcq/view?usp=drive_link) 
+* [Week 02 - Counting (Part 1)](https://drive.google.com/file/d/1bpriay4pW_SsFgucaO0YgjKpE1bd6Zcq/view?usp=drive_link)
+* [Week 03 - Counting (Part 2)]
+* [Week 04 - Counting (Part 3)]
+* [Week 05 - Relations (Part 1)]
+* [Week 06 - Relations (Part 2)]
+* [Week 07 - Relations (Part 3)]
 
-* [Week 02 - ]
-* [Week 03 - ]
-* [Week 04 - ]
-* [Week 05 - ]
-* [Week 06 - ]
-* [Week 07 - ]
-
-* [Week 09 - ]
-* [Week 10 - ]
-* [Week 11 - ]
-* [Week 12 - ]
-* [Week 13 - ]
-* [Week 14 - ]
-* [Week 15 - ]
+* [Week 09 - Graphs (Part 1)]
+* [Week 10 - Graphs (Part 2)]
+* [Week 11 - Trees (Part 1)]
+* [Week 12 - Trees (Part 2)]
+* [Week 13 - Boolean algebra (Part 1)]
+* [Week 14 - Boolean algebra (Part 2)]
+* [Week 15 - Boolean algebra (Part 3)]
