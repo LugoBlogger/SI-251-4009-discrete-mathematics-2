@@ -25,5 +25,5 @@ $$
 
 - The Sieve of Erastosthenes
 
-- A derangment is a permutation of objects that leaves no object in its original
+- A derangement is a permutation of objects that leaves no object in its original
   position
