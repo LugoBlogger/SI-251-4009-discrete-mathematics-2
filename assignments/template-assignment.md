@@ -6,7 +6,7 @@ To submit any assignment, you need to follow strictly to all this rule
    Draw a margin with the size 1 cm around all the edges
 
    <div style="display:flex; justify-content:center; width:100%">
-   <div style="border: 2px solid black">
+   <div style="border: 2px solid black; background-color:gray">
     <div style="width:300px; height:400px; border:1px solid black; margin: 20px">
       <span>Full Name</span>   <br>
       <span>Student ID</span>

@@ -20,7 +20,7 @@ siswa memilih
 Suatu pelat nomor kendaraan di Kalimantan Timur memiliki pola 
 `KT #### XXX`, dengan `#` menyatakan angka dan `X` menyatakan huruf.
 Carilah berapa banyak permutasi yang mungkin dari nomor kendaraan yang ada.
-Menggunakan [sumber data berikut](http://rc.korlantas.polri.go.id:8900/eri2017/rekappulaupolda.php), 
+Menggunakan [sumber data berikut](http://rc.korlantas.polri.go.id:8900/eri2017/laprekappulau.php) (pilih "Kalimantan" di halaman yang diberikan),
 hitunglah juga kendaraan yang tersisa yang belum dibuat pelat nomornya.
 
 ## Problem 3 (30 poin)
