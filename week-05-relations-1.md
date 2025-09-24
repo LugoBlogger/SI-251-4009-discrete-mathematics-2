@@ -82,18 +82,44 @@ and C for Rasyid. This assignment of grades is illustrad in below
 - $R = \{(a, b) \mid a \text{ divides } b\}$ where $a \in A$, $b \in A$
 
 **Example**: 
-Consider the following relations:
-- $R_1 = \{(a, b) \mid a \leq b\}$
-- $R_2 = \{(a, b) \mid a > b\}$   
-- $R_3 = \{(a, b) \mid a = b \text{ or } a = -b\}$
+Consider the following relations on the set of integers:
+- $R_1 = \{(a, b) \mid a \leq b\}$,
+- $R_2 = \{(a, b) \mid a > b\}$,
+- $R_3 = \{(a, b) \mid a = b \text{ or } a = -b\}$,
+- $R_4 = \{(a, b) \mid a = b\}$,
+- $R_5 = \{(a, b) \mid a = b + 1\}$,
+- $R_6 = \{(a, b) \mid a + b \leq 3\}$
 
-$(1, 1)$ is in $R_1$, $R_3$;   
-$(2, 1)$ is in $R_2$
+Which of these relations contain each of the pairs $(1, 1)$, $(1, 2)$, 
+$(2, 1)$, $(1, -1)$, and $(2, 2)$?
+
+$(1, 1)$ is in $R_1$, $R_3$, $R_4$, and $R_6$;    
+$(1, 2)$ is in $R_1$ and $R_6$;   
+$(2, 1)$ is in $R_2$, $R_5$, and $R_6$;   
+$(1, -1)$ is is in $R_2$, $R_3$, and $R_6$; and finally   
+$(2, 2)$ is in $R_1$, $R_3$, and $R_4$.
 
 ### Properties of relations
-- Reflexive
-- Symmetric, Antisymmetry
-- Transitive
+- Reflexive     
+  **Definition 3**    
+  A relation $R$ on a set $A$ is called _reflexive_ if $(a, a)$
+  for every element $a \in A$.
+
+- Symmetric, Antisymmetry    
+  **Definition 4**     
+  A relation $R$ on a set $A$ is called _symmetric_ 
+  if $(b, a) \in R$ wheneer $(a, b) \in R$, for all 
+  $a, b \in A$.    
+  A relation $R$ on a set $A$ such that for all, $a, b \in A$,
+  if $(a, b) \in R$ and $(b, a) \in R$, then $a = b$ is
+  called _antisymmetric_.
+
+
+- Transitive     
+  **Definition 5**    
+  A relation $R$ on a set $A$ is called _transitive_ if whenever
+  $(a, b) \in R$ and $(b, c) \in R$, then $(a, c) \in R$, 
+  for all $a, b, c \in A$.
 
 ### (optional) Combining relations
 
@@ -147,8 +173,7 @@ _Solution_:
 - There is a relationship involving the name of a student, 
   the student's mahor, and the student's grade point average
 - There is a relationship invovling the airline, flight number, 
-  starting point, destination, departure time, and arrival time of 
-  a flight.
+  starting point, destination, departure time, and arrival time of a flight.
 
 
 ### $n$-ary relations
