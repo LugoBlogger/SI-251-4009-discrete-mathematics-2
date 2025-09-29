@@ -27,7 +27,7 @@ hitunglah juga kendaraan yang tersisa yang belum dibuat pelat nomornya.
 
 Suatu kotak pakaian memuat 8 kaos kaki berwarna biru
 dan 6 kaos kaki berwarna merah. Carilah berapa banyak
-cara untuk mengambil dua kaos kaki kotak tersebut jika:
+cara untuk mengambil dua kaos kaki dari kotak tersebut jika:
 
 <ol type="a">
 <li> Warna kaos kaki yang diambil bebas.

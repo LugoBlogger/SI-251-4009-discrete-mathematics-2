@@ -57,7 +57,7 @@ $A$ _to_ $B$ is the subset of $A \times B$.
 ### Function as relations   
 
 **Definition** (fom Section 2.3)    
-Let $A$ and $B$ be nonempty sets. A _function f_ from $A$ to $B is an
+Let $A$ and $B$ be nonempty sets. A _function f_ from $A$ to $B$ is an
 assignment of exactly one element of $B$ to each element of $A$. 
 We write $f(a) = b$ if $b$ is the unique element of $B$ assigned by 
 the function $f$ to the element $a$ of $A$. If $f$ is a function from 
