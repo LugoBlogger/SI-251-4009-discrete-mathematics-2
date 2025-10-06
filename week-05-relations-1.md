@@ -8,9 +8,34 @@
   technology information: Databases and SQL.
 
 
-## Relations and their properties
+## Motivation
 
-### Introduction
+All domestic airports in USA. If we know there is a route between two airports
+(a relation), we can decide if we can find the shortest path 
+between any two airports.
+
+## Review on functions
+
+**Definition** (fom Section 2.3)    
+Let $A$ and $B$ be nonempty sets. A _function f_ from $A$ to $B$ is an
+assignment of exactly one element of $B$ to each element of $A$. 
+We write $f(a) = b$ if $b$ is the unique element of $B$ assigned by 
+the function $f$ to the element $a$ of $A$. If $f$ is a function from 
+$A$ to $B$, we write $f: A \rightarrow B$.
+
+_Remarks_: Functions are sometimes also called **mappings** or 
+**transformations**.
+
+**Example**:   
+Suppose that each student in a discrete mathematics class is assigned 
+for a ltter grade from the set $\{A, AB, B, BC, C\}$. And suppose
+that the grades are A for Ahmad, B for Bayu, AB for Andi, A for Galih,
+and C for Rasyid. This assignment of grades is illustrad in below
+
+<img src="./figures/function-example.png" width="300px">
+
+
+## Relations
 
 **Definition** (product sets from Section 2.1):   
 Let $A$ and $B$ be sets. The _Cartesion product_ of $A$
@@ -32,7 +57,7 @@ $A$ _to_ $B$ is the subset of $A \times B$.
 **Example**: 
 - $A = \{\text{all the students in Information Systems}\}$ 
 - $B = \{\text{all the courses in Information Systems}\}$
-- $R = \{(a, b)\}$, where $a$ is a student enrolled in course $b$.  
+- $R = \{(a, b)\}$, where $a$ s a student enrolled in course $b$.  
   For instance:  
   $R = \{(\text{Andi, SI518}),
             (\text{Debora, SI518}), (\text{Andi, SI510})\}$
@@ -56,23 +81,7 @@ $A$ _to_ $B$ is the subset of $A \times B$.
 
 ### Function as relations   
 
-**Definition** (fom Section 2.3)    
-Let $A$ and $B$ be nonempty sets. A _function f_ from $A$ to $B$ is an
-assignment of exactly one element of $B$ to each element of $A$. 
-We write $f(a) = b$ if $b$ is the unique element of $B$ assigned by 
-the function $f$ to the element $a$ of $A$. If $f$ is a function from 
-$A$ to $B$, we write $f: A \rightarrow B$.
-
-_Remarks_: Functions are sometimes also called **mappings** or 
-**transformations**.
-
-**Example**:   
-Suppose that each student in a discrete mathematics class is assigned 
-for a ltter grade from the set $\{A, AB, B, BC, C\}$. And suppose
-that the grades are A for Ahmad, B for Bayu, AB for Andi, A for Galih,
-and C for Rasyid. This assignment of grades is illustrad in below
-
-<img src="./figures/function-example.png" width="300px">
+Write the example of function above into relations.
 
 ### Relations on a set
 **Definition**: A _relation on a set_ $A$ is a relation from $A$ to $A$.
@@ -99,11 +108,14 @@ $(2, 1)$ is in $R_2$, $R_5$, and $R_6$;
 $(1, -1)$ is is in $R_2$, $R_3$, and $R_6$; and finally   
 $(2, 2)$ is in $R_1$, $R_3$, and $R_4$.
 
-### Properties of relations
+## Properties of relations
 - Reflexive     
   **Definition 3**    
   A relation $R$ on a set $A$ is called _reflexive_ if $(a, a)$
   for every element $a \in A$.
+
+  **Example**    
+
 
 - Symmetric, Antisymmetry    
   **Definition 4**     
@@ -121,7 +133,7 @@ $(2, 2)$ is in $R_1$, $R_3$, and $R_4$.
   $(a, b) \in R$ and $(b, c) \in R$, then $(a, c) \in R$, 
   for all $a, b, c \in A$.
 
-### (optional) Combining relations
+## (optional) Combining relations
 
 **Example 18**     
 Let $A$ and $B$ be the set of all students and the set of all courses
@@ -172,7 +184,7 @@ _Solution_:
 
 - There is a relationship involving the name of a student, 
   the student's mahor, and the student's grade point average
-- There is a relationship invovling the airline, flight number, 
+- There is a relationship involving the airline, flight number, 
   starting point, destination, departure time, and arrival time of a flight.
 
 
@@ -196,10 +208,11 @@ _Solution_: The Cartesian product $A \times B \times C$ consists of all
 ordered triples $(a, b, c)$ wher $a \in A$, $b \in B$, and $c \in C$.
 Hence,
 $$
-  A \times B \times C = \{
-    (0, 1, 0), (0, 1, 1), (0, 1, 2), (0, 2, 0), (0, 2, 1), (0, 2, 2),
-    (1, 1, 0), (1, 1, 1), (1, 1, 2), (1, 2, 0), (1, 2, 1), (1, 2, 2)
-  \}
+\begin{align*}
+  A \times B \times C = \left\{
+    (0, 1, 0), (0, 1, 1), (0, 1, 2), (0, 2, 0), (0, 2, 1), (0, 2, 2), \\ \right. \\
+   \left. (1, 1, 0), (1, 1, 1), (1, 1, 2), (1, 2, 0), (1, 2, 1), (1, 2, 2) \right\}
+\end{align*}
 $$
 
 **Definition 1**   
@@ -261,7 +274,8 @@ _efficient_.
   attribute
 
 - **primary keys**.    
-  
+  A domain of $n$-arry relation is called a **primary key** when the value
+  of the $n$-tuple 
 
 - (optional) **extension**
 - (optional) **intension**
