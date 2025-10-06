@@ -133,7 +133,9 @@ $(2, 2)$ is in $R_1$, $R_3$, and $R_4$.
   $(a, b) \in R$ and $(b, c) \in R$, then $(a, c) \in R$, 
   for all $a, b, c \in A$.
 
-## (optional) Combining relations
+  To check transitivity, we have to list all possible pairs of $((a, b), (b, c))$.
+
+## Combining relations
 
 **Example 18**     
 Let $A$ and $B$ be the set of all students and the set of all courses
@@ -190,6 +192,15 @@ _Solution_:
 
 ### $n$-ary relations
 
+**Definition**     
+Suppose we have $n$ non-empty sets that we called $A_1, A_2, \ldots, A_n$.
+$n$-tuple is an object consist of $n$ items that we can write as
+$(a_1, a_2, \ldots, a_n)$ where the first item $a_1 \in A_1$, 
+the second item $a_1 \in A_2$, ..., the $n$-th item $a_n \in A_n$.    
+Note that this definition of $n$-tuple is different to the definition 
+of a set with $n$ elements. For tuple, the order is matter
+and each element of tuple are coming from the element of sets.
+
 **Definition 9** (Cartesian product of more than two sets)    
 The _Cartesian product_ of the sets $A_1, A_2, \ldots, A_n$, denoted by
 $A_1 \times A_2 \times \cdots \times A_n$, is the set of ordered
@@ -197,7 +208,7 @@ $n$-tuples $(a_1, a_2, \ldots, a_n)$, where $a_i$ belongs to $A_i$
 for $i = 1, 2, \ldots, n$. In other words,
 $$
   A_1 \times A_2 \times \cdots \times A_n = 
-  \{(a_1, a_2, \ldots, a_n) \mid a_i \in A_i for i = 1, 2, \ldots, n\}
+  \{(a_1, a_2, \ldots, a_n) \mid a_i \in A_i \text{ for } i = 1, 2, \ldots, n\}
 $$
 
 **Example 19**    
@@ -275,17 +286,51 @@ _efficient_.
 
 - **primary keys**.    
   A domain of $n$-arry relation is called a **primary key** when the value
-  of the $n$-tuple 
+  of the $n$-tuple from this domain determine the $n$-tuple. That is, 
+  a domain is a primary key when no two $n$-tuples in the relation have
+  the same value from this domain.
 
-- (optional) **extension**
-- (optional) **intension**
+  **Note**:    
+  Because we can add or delete records, the property that a domain is a 
+  primary key is time-dependent.
+
+- (optional) **extension**    
+  The current collection of $n$-tuples in a relation is called the 
+  **extension** of the relation.
+
+- (optional) **intension**    
+  The more permanent part of a databse, including the name and attributes
+  of the database, is called its **intension**.   
+
+
+- **composite key**    
+  When the values of a set of domains determine an $n$-tuple in a relation, 
+  the Cartesian product of these domains is called a **composite key**.  
 
 
 ### Operations on $n$-ary relations
 
-- Selection
-- Projection
-- Join
+- Selection     
+  Let $R$ be an $n$-ary relation and $C$ a condition that elements in 
+  $R$ may satisfy. Then the _selection operator_ $s_C$ maps the 
+  $n$-arry relation $R$ to the $n$-ary relation of all $n$-tuples from
+  $R$ that satisfy the condition $C$.
+
+- Projection     
+  The _projection_ $P_{i_1, i_2, \ldots, i_m}$ where 
+  $i_1 < i_2 < \ldots < i_m$, 
+  maps the $n$-tuple $(a_1, a_2, \ldots, a_n)$ to the $m$-tuple 
+  $(a_{i_1}, a_{i_2}, \ldots, a_{i_m})$ where $m \leq n$.
+
+- Join     
+  Let $R$ be a relation of degree $m$ and $S$ a relation of degree $n$. 
+  The _join_ $J_p(R, S)$, where $p \leq m$ and $p \leq n$, is a relation 
+  of degreen $m + n -p$ that consists of all $(m + n - p)$-tuples
+  $(a_1, a_2, \ldots, a_{m-p}, c_1, c_2, \ldots, c_p, 
+    b_1, b_2, \ldots, b_{n-p})$, where the $m$-tuple 
+  $(a_1, a_2, \ldots, a_{m-p}, c_1, c_2, \ldots, c_p)$ belongs to $R$ and
+  the $n$-tuple $(c_1, c_2, \ldots, c_p, b_1, b_2, \ldots, b_{n-p})$
+  belongs to $S$.
 
 
 **Table 2**: `gpas`
@@ -358,6 +403,9 @@ _efficient_.
 
 
 ### SQL
+
+SQL is a database query language. It is a short for Structured Query Language.
+
 
 **Table 8**: `flights`
 | `airline` | `flight_number` | `gate` | `destination` | `departure_time` |
