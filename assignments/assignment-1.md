@@ -1,4 +1,4 @@
-# Assignment 01
+# Assignment 1
 
 Silahkan memilih dua problem berikut untuk diselesaikan.
 

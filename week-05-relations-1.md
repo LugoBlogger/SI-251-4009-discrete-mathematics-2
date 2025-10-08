@@ -135,6 +135,19 @@ $(2, 2)$ is in $R_1$, $R_3$, and $R_4$.
 
   To check transitivity, we have to list all possible pairs of $((a, b), (b, c))$.
 
+  For the case $R_6 = \{(3, 4)\}$, we need to use the definition 
+  $\forall a \forall b \forall c (((a, b) \in R \wedge (b, c) \in R) \rightarrow (a, c) \in R)$.
+  We have a true statement for $(3, 4) \in R_6$, 
+  but not $(4, c) \in R_6$ for $c \in \{1, 2, 3, 4\}$, so the antecendent
+  must be $\mathbf{T} \wedge \mathbf{F} = \mathbf{F}$, 
+  and we have $\mathbf{F} \rightarrow (4, c) \in R_6$.
+  The consequence can be true or false, but
+  from the definition of implication, it does not 
+  matter whether we have true or false for
+  the consequence if the antecendent true, we
+  always have the truthness of the definition
+  of transitivity must be true. So $R_6$ is transitive.
+
 ## Combining relations
 
 **Example 18**     
@@ -266,7 +279,7 @@ interrelated data and a set of programs to access those data.
 The collection of data, usually referred to as the **database**, 
 contains information relevant to an enterprise. 
 The primary goal of a DBMS is to provide a way to store and
-retrieve database information that is both _convention_ and 
+retrieve database information that is both _convenient_ and 
 _efficient_.
 
 - **records**.   

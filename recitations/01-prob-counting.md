@@ -128,7 +128,7 @@ which relates terms in Pascal's triangle that form a hexagon.
 
 ## Problem 10
 
-How manyu ways are there to assign three jobs to five employees 
+How many ways are there to assign three jobs to five employees 
 if each employee can be given more than one job?
 
 **Solution**
