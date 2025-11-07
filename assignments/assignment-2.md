@@ -83,7 +83,7 @@ Diberikan definisi operator yang bekerja pada relasi $n$-ary sebagai berikut:
 Misalkan $R$ adalah relasi $n$-ary dan $C$ adalah kondisi yang mungkin 
 bisa dipenuhi oleh anggota di $R$. Maka operator _selection_, atau dinotasikan 
 $s_C$, adalah pemetaan relasi $n$-ary $R$ menuju relasi $n$-ary 
-(yang mungkin berukuran lebih kecil, ukuran tupletnya) yang masih memenuhi 
+(yang mungkin berukuran lebih kecil untuk banyaknya tuplet) yang masih memenuhi 
 kondisi $C$.
 
 Diberikan tabel sebagai berikut

@@ -4,7 +4,7 @@ Motivation:
 - The seven bridges of Königsberg
 - Icosian puzzle
 - [(Bakhshandeh et al., 2011) - Degrees of Separation in Social Networks](https://ojs.aaai.org/index.php/SOCS/article/view/18200/17991)
-- [Indonesia submarine cable map](./figures/indonesia-submarine-cable-map.png)
+- [Indonesia submarine cable map](https://www.submarinecablemap.com/country/indonesia)
 
 
 ## Graphs and graph models
@@ -106,6 +106,19 @@ Motivation:
 - Wheels
 - $n$-cubes
 
+**Definition 7**   
+> A _subgraph of a graph_ $G = (V, E)$ is a graph $H = (W, F)$, where 
+> $W \subseteq V$ and $F \subseteq E$. A subgraph $H$ of $G$ is 
+> _a proper subgraph_ of $G$ if $H \neq G$.
+
+**Definition 8**
+> Let $G = (V, E)$ be a simple graph. The **subgraph induced** by a subset
+> $W$ of the vertex set $V$ is the graph $(W, F)$, where the edge set $F$
+> contains an edge in $E$ if and only if both endpoints of this edge are 
+> in $W$.
+
+**Example 18**
+
 ## Connectivity
 
 **Definition 1** (for undirected graph)
@@ -126,6 +139,14 @@ Motivation:
 > $e_1, e_2, \ldots, e_n$.    
 > A path or circuit is _simple_ if it does not contain the same
 > edge more than once.
+
+**Definition 3**
+> An undirected graph is called _connected_ if there is a path between every
+> pair of distinct vertices of graph.   
+> An undirected graph that is not _connected_ is called disconnected.   
+> We say that we _disconnect_ a graph when we remove vertices or edges, 
+> or both, to produce a disconnected subgraph.
+
 
 **Example 1**
 
@@ -151,9 +172,22 @@ Motivation:
 
 **Example 1**
 
+
+**Theorem 1**   
+> A connected multigraph with at least two vertices has an Euler circuit if
+> and only of each of its vertices has even degree. 
+
+**Note**:   
+A simple graph is a special case of a multigraph when the number
+of edges between any two nodes is restricted to have one edge.   
+Why do we use _connected_ in Theorem 1, because we need to avoid
+a vertice that is isolated. Of course if we have an isolated vertices, 
+the Theorem 1 will not work.
+
 **Theorem 2**
 > A connected  multigraph has an Euler path but not an Euler circuit if and 
 > only if it has exactly two vertices of odd degree.
+
 
 
 **Definition 2**   
@@ -191,4 +225,13 @@ Motivation:
 - Start the some graph definitions
 
 
+## Past course activities (2025/Oct/22)
 
+- Icosian game: an automatic way to find a path
+  https://glowscript.org/#/user/lugoblogger/folder/MyPrograms/program/icosian-game
+
+
+## Past course activities (2025/Nov/05)
+
+- Use VOSViewer to show the application of graph model to represent
+  the model of co-occurrence of papers.

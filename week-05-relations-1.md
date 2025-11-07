@@ -446,5 +446,8 @@ SELECT lecturer, c_time
   
 ```
 
+Take a look an example of SQL in actions from your 
+slides in Actuarial Science - Data Science lecture, week 15.
+
 ### (optional) Association rules from data mining
 
