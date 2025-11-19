@@ -9,11 +9,54 @@ Useful resources:
 
 ## Introduction
 
+**Subtree**
+
+**Definition 3**   
+$m$-ary tree, full $m$-ary tree, binary tree
+
+**Trees as Models**
+- Representing Organizations
+- Compute File Sysmtes
+- Two-Connected Parallel Processors.  
+  We compare the number of process, not the number of addition.       
+  [Future Demo]: demonstrate parallel computation with Fugaku
+
+**Theorem 2**
+
+**Theorem 3**
+
+**Theorem 4**
+This theorem gives a formula for a given number of vertices, 
+number of internal vertices, or number of leaves, we have a formula
+to convert between those entities
+
+**Example 9**. 
+
+In the textbook, the author mention that the problem is modeled by 
+$4$-ary tree. Actually, if we draw the problem, it is full 4-ary tree.
+One of the example for this chain message is
+
+<img src="./figures/full-4-ary-chain-messages-problem.png" width="600">
+
+**Demo `networkx`**. See `/programs/trees.ipynb`
+
+**Balanced $m$-ary trees**
+
+**Definition of _height_ and _level_
+
 ## Applications
 
 ### Binary search trees
 
+**Example 1**
+
+**Example 2**
+
 ### Decision trees
+
+**Example 3**
+
+**Example 4**
 
 ### Prefix codes
 
