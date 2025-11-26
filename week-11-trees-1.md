@@ -42,7 +42,7 @@ One of the example for this chain message is
 
 **Balanced $m$-ary trees**
 
-**Definition of _height_ and _level_
+**Definition of _height_ and _level_**
 
 ## Applications
 
@@ -61,6 +61,25 @@ One of the example for this chain message is
 ### Prefix codes
 
 Huffman coding
+
+Algorithm 2: Huffman Coding     
+**procedure** _Huffman_($C$: symbols $a_i$ with frequencies $w_i$,
+                        $i = 1, \ldots, n$)    
+$F :=$ forest of $n$ rooted trees, each consisting of the single vertex $a_i$   
+&nbsp;&nbsp;&nbsp;&nbsp; and assigned weight $w_i$    
+**while** $F$ is not a tree   
+&nbsp;&nbsp;&nbsp;&nbsp;
+  Replace the rooted trees $T$ and $T'$ of least weights from $F$ with 
+  $w(T) \geq w(T')$ with a tree having a new root that has $T$ as 
+  its left subtree and $T$ as its right subtree. Label the new edge to $T$ 
+  with $0$ and the new edge to $T'$ with $1$.   
+&nbsp;&nbsp;&nbsp;&nbsp;
+  Assign $w(T) + w(T')$ as the weight of the new tree.    
+**return** the Huffman coding for the symbol $a_i$ is the concatenation of 
+the labels of the edges in the unique path from the root to the vertex $a_i$
+
+**Example 5**  
+
 
 ### Game trees
 - Tic-tac-toe
