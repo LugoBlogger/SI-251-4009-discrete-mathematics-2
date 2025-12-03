@@ -82,10 +82,20 @@ the labels of the edges in the unique path from the root to the vertex $a_i$
 
 
 ### Game trees
-- Tic-tac-toe
+- Tic-tac-toe    
+  To do: redraw it with Python
 - Chess
-  Shannon number
-- Rubik's cube
+  Shannon number.   
+  See the paper, (Shannon, 1050) - Programming a computer for playing chess    
+  Compare the number of configuration to the number of the grains of sand
+  on earth. ($7.5 \times 10^{18}$)
+- Rubik's cube      
+  God's algorithm: https://www.cube20.org/.   
+  There are only at maximum 20 moves to solve any configuration of
+  rubik's cube. It is solved using computer-assisted proof with
+  total 35 CPU-years.
+  A fastest rubik's cube solver by robot and human.   
+
 
 
 ### Class activity
