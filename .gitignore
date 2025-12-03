@@ -1,3 +1,16 @@
 /assignments/*.pdf
 /figures/*.bkp
 /figures/*.dtmp
+
+/midterm-exam/251015-tex-group-b/*.aux
+/midterm-exam/251015-tex-group-b/*.fdb_latexmk
+/midterm-exam/251015-tex-group-b/*.fls
+/midterm-exam/251015-tex-group-b/*.log
+/midterm-exam/251015-tex-group-b/*.synctex.gz
+
+/midterm-exam/251017-tex-group-a/*.bkp
+/midterm-exam/251017-tex-group-a/*.aux
+/midterm-exam/251017-tex-group-a/*.fdb_latexmk
+/midterm-exam/251017-tex-group-a/*.fls
+/midterm-exam/251017-tex-group-a/*.log
+/midterm-exam/251017-tex-group-a/*.synctex.gz
