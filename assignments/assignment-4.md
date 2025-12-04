@@ -53,17 +53,17 @@ Sebagai contoh diberikan graf $G$ berikut
 
 <img src="./figures/for-spanning-tree.png" width=400>
 
-Graf $G$ diatas saling terhubung (tidak ada simpul yang terisolasi), 
-namun graf diatas bukan _tree_ carena memiliki beberapa 
+Graf $G$ diatas saling terhubung (tidak ada simpul yang terisolasi, $\deg(v) \neq 0$), 
+namun graf diatas bukan _tree_ karena memiliki beberapa 
 putaran sederhana, yaitu 
 - $a \rightarrow b \rightarrow f \rightarrow e \rightarrow a$
 - $e \rightarrow f \rightarrow g \rightarrow e$
 - $f \rightarrow c \rightarrow g \rightarrow f$
-- dst.   
+- dan seterusnya ...
 
 Dengan menghapus busur $(a, e)$, kita dapat mengeliminasi/memutus 
 satu putaran sederhana. Graf yang dihasilkan masih terhubung (tidak
-ada simpul yang terisolasi). 
+ada simpul yang terisolasi, $\deg(v) \neq 0$). 
 
 <img src="./figures/for-spanning-tree-construct-a.png" width=800>
 
@@ -91,10 +91,10 @@ Diberikan graf-graf sederhana berikut, carilah _spanning tree_ dari graf-graf
 sederhana tersebut
 
 <ol type="a">
-<li> <img align="top" src="./figures/construct-spanning-tree-a.png">
+<li> <img align="top" src="./figures/construct-spanning-tree-a.png" height=200>
 
 <br>
-<li> <img align="top" src="./figures/construct-spanning-tree-b.png">
+<li> <img align="top" src="./figures/construct-spanning-tree-b.png" height=300>
 </ol>
 
 ## Problem 5 (50 poin)
