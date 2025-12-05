@@ -96,6 +96,9 @@ the labels of the edges in the unique path from the root to the vertex $a_i$
   total 35 CPU-years.
   A fastest rubik's cube solver by robot and human.   
 
+  Rubik's cube configurations as a tree
+  https://mathematica.stackexchange.com/questions/420/visualizing-rubiks-graph
+
 
 
 ### Class activity
