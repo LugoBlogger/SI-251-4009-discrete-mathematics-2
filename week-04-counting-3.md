@@ -5,7 +5,7 @@
 - Motivation of considering generating functions.
 
 **Definition 1**     
-The _generating function for the sequence $a_0$, $a_1$, $\ldots$, $a_k$, $\ldots$ of real numbers is the infinite series
+The _generating function_ for the sequence $a_0$, $a_1$, $\ldots$, $a_k$, $\ldots$ of real numbers is the infinite series
 $$
   G(x) = a_0 x + a_1 + \ldots + a_k x^k + \ldots
     \sum_{k=0}^\infty a_k
