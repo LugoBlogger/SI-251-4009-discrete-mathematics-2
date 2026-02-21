@@ -3,8 +3,8 @@ your ITK student e-mail account.
 
 Please click the following hyperlink to access the slide. 
 
-* [Week 01 - Introduction](https://drive.google.com/file/d/1bpriay4pW_SsFgucaO0YgjKpE1bd6Zcq/view?usp=drive_link) 
-* [Week 02 - Counting (Part 1)](https://drive.google.com/file/d/1ju8Y9OFxQwiQgL9q4o4oaRtZp3xHv-Qd/view?usp=drive_link)
+* [Week 01 - Introduction](https://drive.google.com) 
+* [Week 02 - Counting (Part 1)](https://drive.google.com)
 * [Week 03 - Counting (Part 2)]
 * [Week 04 - Counting (Part 3)]
 * [Week 05 - Relations (Part 1)]
