@@ -1,6 +1,6 @@
 # Rules for portfolio assessment
 
-To write any assignment, you need to follow strictly to all these rules.
+To write your portfolio assessment, you need to follow strictly to all these rules.
 
 1. Prepare a sheet of A4 paper. 
    Draw a margin with the size 1 cm around all the edges
@@ -22,7 +22,7 @@ To write any assignment, you need to follow strictly to all these rules.
    You can use both sides of the paper.   
    Make sure to draw also the margin. If you submit your answer more than one sheets, please write the page number.   
 
-   **You have to write your answers with a pen!**
+   **You have to write your notes with a pen!**
 
    **Special case**: If you want to use 2-hole binder for organizing your
    writing, set the left margin into 1.5cm or 2cm (depending on your binder).
@@ -75,5 +75,5 @@ To write any assignment, you need to follow strictly to all these rules.
 5. Any submission that does not follow the above rules are rejected 
    and resulting zero grade.
   
-6. You have write with your own words and
-   you have to understand of all of them.
+6. You have to write with your own words and
+   you have to understand all of them.
