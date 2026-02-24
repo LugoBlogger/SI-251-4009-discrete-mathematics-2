@@ -20,7 +20,7 @@ To write your portfolio assessment, you need to follow strictly to all these rul
    Write your name and the student ID number as shown in the above figure.   
    You may include the date to the top right of your paper.
    You can use both sides of the paper.   
-   Make sure to draw also the margin. If you submit your answer more than one sheets, please write the page number.   
+   Make sure to draw also the margin. And please write the page number at the bottom right of your page.
 
    **You have to write your notes with a pen!**
 
