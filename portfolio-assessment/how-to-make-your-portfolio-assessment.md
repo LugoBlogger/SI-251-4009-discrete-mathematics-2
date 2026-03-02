@@ -5,8 +5,11 @@ To write your portfolio assessment, you need to follow strictly to all these rul
 1. Prepare a sheet of A4 paper. 
    Draw a margin with the size 1 cm around all the edges
 
-   <div style="display:flex; justify-content:center; width:100%">
-   <div style="border: 2px solid black; background-color:gray">
+   <div style="display:flex; justify-content:center">
+      <img src="./figures/portfolio-template.png">
+   </div>
+   <!-- <div style="display:flex; justify-content:center; width:100%">
+   <div style="border: 2px solid black; background-color:white">
     <div style="width:300px; height:400px; border:1px solid black; margin: 20px">
       <div style="display:flex; justify-content:space-between">
         <span>Full Name</span>  
@@ -15,7 +18,7 @@ To write your portfolio assessment, you need to follow strictly to all these rul
       <span>Student ID</span>
     </div>
    </div>
-   </div>
+   </div> -->
 
    Write your name and the student ID number as shown in the above figure.   
    You may include the date to the top right of your paper.
