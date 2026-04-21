@@ -28,7 +28,7 @@ _Remarks_: Functions are sometimes also called **mappings** or
 
 **Example**:   
 Suppose that each student in a discrete mathematics class is assigned 
-for a ltter grade from the set $\{A, AB, B, BC, C\}$. And suppose
+for a letter grade from the set $\{A, AB, B, BC, C\}$. And suppose
 that the grades are A for Ahmad, B for Bayu, AB for Andi, A for Galih,
 and C for Rasyid. This assignment of grades is illustrad in below
 
@@ -38,7 +38,7 @@ and C for Rasyid. This assignment of grades is illustrad in below
 ## Relations
 
 **Definition** (product sets from Section 2.1):   
-Let $A$ and $B$ be sets. The _Cartesion product_ of $A$
+Let $A$ and $B$ be sets. The _Cartesian product_ of $A$
 and $B$, denoted by $A \times B$, is the set of all 
 ordered pairs $(a, b)$, where $a \in A$ and $b \in B$.
 Hence
