@@ -111,16 +111,13 @@ $(2, 2)$ is in $R_1$, $R_3$, and $R_4$.
 ## Properties of relations
 - Reflexive     
   **Definition 3**    
-  A relation $R$ on a set $A$ is called _reflexive_ if $(a, a)$
+  A relation $R$ on a set $A$ is called _reflexive_ if $(a, a) \in R$
   for every element $a \in A$.
-
-  **Example**    
-
 
 - Symmetric, Antisymmetry    
   **Definition 4**     
   A relation $R$ on a set $A$ is called _symmetric_ 
-  if $(b, a) \in R$ wheneer $(a, b) \in R$, for all 
+  if $(b, a) \in R$ whenever $(a, b) \in R$, for all 
   $a, b \in A$.    
   A relation $R$ on a set $A$ such that for all, $a, b \in A$,
   if $(a, b) \in R$ and $(b, a) \in R$, then $a = b$ is
@@ -133,10 +130,32 @@ $(2, 2)$ is in $R_1$, $R_3$, and $R_4$.
   $(a, b) \in R$ and $(b, c) \in R$, then $(a, c) \in R$, 
   for all $a, b, c \in A$.
 
-  To check transitivity, we have to list all possible pairs of $((a, b), (b, c))$.
 
-  For the case $R_6 = \{(3, 4)\}$, we need to use the definition 
-  $\forall a \forall b \forall c (((a, b) \in R \wedge (b, c) \in R) \rightarrow (a, c) \in R)$.
+**Example**    
+Consider the following relations on $\{1, 2, 3, 4\}$:   
+$R_1 = \{(1, 1), (1, 2), (2, 1), (2, 2), (3, 4), (4, 1), (4, 4) \}$   
+$R_2 = \{(1, 1), (1, 2), (2, 1)\}$   
+$R_3 = \{(1, 1), (1, 2), (1, 4), (2, 1), (2, 2), (3, 3), (4, 1), (4, 4)\}$    
+$R_4 = \{(2, 1), (3, 1), (3, 2), (4, 1), (4, 2), (4, 3)\}$   
+$R_5 = \{(1, 1), (1, 2), (1, 3), (1, 4), (2, 2), (2, 3), (2, 4), (3, 3), (3, 4), (4, 4)\}$   
+$R_6 = \{(3, 4)\}$
+
+Which of these relations are reflexive, symmetric, anti-symmetric, and transitive?
+
+- To check reflexivity, list of all $(a, a)$ for all $a \in A$
+
+- To check symmetric, list of all $(a, b)$, and check if all pairs
+of $(b, a)$ gives $(b, a) \in R = \mathbf{T}$
+
+- To check antisymmetric, list of all $(a, b)$ where $a \neq b$, 
+and check if all pairs of $(b, a)$ give $(b, a) \in R = \mathbf{F}$
+
+- To check transitivity, we have to list **all** possible pairs of $((a, b), (b, c))$
+
+- For the case $R_6 = \{(3, 4)\}$, we need to use the definition 
+  $$
+  \forall a \forall b \forall c (((a, b) \in R \wedge (b, c) \in R) \rightarrow (a, c) \in R)
+  $$.
   We have a true statement for $(3, 4) \in R_6$, 
   but not $(4, c) \in R_6$ for $c \in \{1, 2, 3, 4\}$, so the antecendent
   must be $\mathbf{T} \wedge \mathbf{F} = \mathbf{F}$, 
