@@ -179,12 +179,12 @@ What are the relations $R_1 \cup R_2$, $R_1 \cap R_2$,
 $R_1 \oplus R_2$, $R_1 \setminus R_2$, and $R_2 \setminus R_1$?
 
 **Definition 6** (the definition of composite relation)
-Let $R$ be a relation from a set $A$ to set $B$ and $S$ a relation
+Let $R$ be a relation from a set $A$ to a set $B$ and $S$ a relation
 from $B$ to a set $C$. The _composite_ of $R$ and $S$ is the 
 relation consisting of ordered pairs $(a, c)$, where 
-$a \in A$, $c \in C$, and for while there exists an element 
+$a \in A$, $c \in C$, and for which there exists an element 
 $b \in B$ such that $(a, b) \in R$ and $(b, c) \in S$. 
-We denot the composite of $R$ and $S$ by $S \circ R$.
+We denote the composite of $R$ and $S$ by $S \circ R$.
 
 _Solution_: 
 - The relation $R_1 \cup R_2$ consists of all ordered pairs 

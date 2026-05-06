@@ -3,7 +3,8 @@
 Motivation: 
 - The seven bridges of Königsberg
 - Icosian puzzle
-- [(Bakhshandeh et al., 2011) - Degrees of Separation in Social Networks](https://ojs.aaai.org/index.php/SOCS/article/view/18200/17991)
+- [(Bakhshandeh et al., 2011) - Degrees of Separation in Social Networks](https://ojs.aaai.org/index.php/SOCS/article/view/18200/17991)     
+  [(Samoylenko et al., 2023) - Why Are There Six Degrees of Separation in a Scoial Network?](https://ojs.aaai.org/index.php/SOCS/article/view/18200/17991)
 - [Indonesia submarine cable map](https://www.submarinecablemap.com/country/indonesia)
 
 
@@ -29,7 +30,7 @@ Motivation:
 **Example**
 
 
-**TABLE 1** Graph terminology
+**TABLE 1** Graph types
 <table>
   <tr>
     <td> <b>Type
@@ -78,13 +79,13 @@ Motivation:
 
 ## Graphs terminology and special types of graphs
 
-### Basis terminology
+### Basic terminology
 
 **Definition 1**   
 > Two vertices $u$ and $v$ in an undirected graph $G$ are called _adjacent_ 
 > (or _neighbours_) in $G$ if $u$ and $v$ are endpoints of an edge $e$ of
-> $G$. Such an edge $e$ is called _incident with_ the vertices $u$ and $v$ 
-> and $v$, and $e$ said to _connect_ $u$ and $v$.
+> $G$. Such an edge $e$ is called _incident with_ the vertices $u$ and $v$,
+> and $e$ said to _connect_ $u$ and $v$.
 
 **Definition 2** (skipped)
 
