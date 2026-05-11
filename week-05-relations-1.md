@@ -169,14 +169,6 @@ and check if all pairs of $(b, a)$ give $(b, a) \in R = \mathbf{F}$
 
 ## Combining relations
 
-**Example 18**     
-Let $A$ and $B$ be the set of all students and the set of all courses
-at a school, respectively. Suppose that $R_1$ consists of all 
-ordered pairs $(a, b)$, where $a$ is a student who has taken course
-$b$, and $R_2$ consistst of all ordered pairs $(a, b)$, 
-where $a$ is a student who requires course $b$ to graduate.
-What are the relations $R_1 \cup R_2$, $R_1 \cap R_2$, 
-$R_1 \oplus R_2$, $R_1 \setminus R_2$, and $R_2 \setminus R_1$?
 
 **Definition 6** (the definition of composite relation)
 Let $R$ be a relation from a set $A$ to a set $B$ and $S$ a relation
@@ -185,6 +177,27 @@ relation consisting of ordered pairs $(a, c)$, where
 $a \in A$, $c \in C$, and for which there exists an element 
 $b \in B$ such that $(a, b) \in R$ and $(b, c) \in S$. 
 We denote the composite of $R$ and $S$ by $S \circ R$.
+
+**Example 20**    
+What is the composite of the relations $R$ and $S$, where $R$ is
+the relation from $\{1, 2, 3\}$ to $\{1, 2, 3, 4\}$ with
+$R = \{(1, 1), (1, 4), (2, 3), (3, 1), (3, 4)\}$ and $S$ is 
+the relation from $\{1, 2, 3, 4\}$, to $\{0, 1, 2\}$ with 
+$S = \{(1, 0), (2, 0) , (3, 1), (3, 2), (4, 1)\}$?
+  
+_Solution_:    
+
+<img src="./figures/composite-relations.png" width="500px">
+
+
+**Example 18**     
+Let $A$ and $B$ be the set of all students and the set of all courses
+at a school, respectively. Suppose that $R_1$ consists of all 
+ordered pairs $(a, b)$, where $a$ is a student who has taken course
+$b$, and $R_2$ consistst of all ordered pairs $(a, b)$, 
+where $a$ is a student who requires course $b$ to graduate.
+What are the relations $R_1 \cup R_2$, $R_1 \cap R_2$, 
+$R_1 \oplus R_2$, $R_1 \setminus R_2$, and $R_2 \setminus R_1$?
 
 _Solution_: 
 - The relation $R_1 \cup R_2$ consists of all ordered pairs 
@@ -202,17 +215,6 @@ _Solution_:
 - $R_2 \setminus R_1$ is the set of all ordered pairs $(a, b)$, 
   where $b$ is a course that $a$ needs to graduate but has not taken.
   
-**Example 20**    
-What is the composite of the relations $R$ and $S$, where $R$ is
-the relation from $\{1, 2, 3\}$ to $\{1, 2, 3, 4\}$ with
-$R = \{(1, 1), (1, 4), (2, 3), (3, 1), (3, 4)\}$ and $S$ is 
-the relation from $\{1, 2, 3, 4\}$, to $\{0, 1, 2\}$ with 
-$S = \{(1, 0), (2, 0) , (3, 1), (3, 2), (4, 1)\}$?
-  
-_Solution_:    
-
-<img src="./figures/composite-relations.png" width="500px">
-
 ## $n$-ary relations and their applications
 ### Introduction
 
@@ -265,10 +267,10 @@ The sets $A_1, A_2, \ldots, A_n$ are called the _domains_ of the
 relation, and $n$ is called its _degree_.
 
 **Example 4**    
-Let $R$ be the relation consisting of 5-tuples (A, N, S, D, T)
-representing airplane flight, where $A$ is the airline, $N$ is
-the flight number, $S$ is the starting point, $D$ is the destination, 
-and $T$ is the departure time. For instance, if Citilink airline has
+Let $R$ be the relation consisting of 5-tuples (a, f, s, d, t)
+representing airplane flight, where $a \in A$ is the airline, $f \in F$ is
+the flight number, $s \in S$ is the starting point, $d \in D$ is the destination, 
+and $t \in T$ is the departure time. For instance, if Citilink airline has
 a flight CTV434 from Surabaya to Balikpapan at 09:34, then
 (Citilink, CTV434, Surabaya, Balikpapan, 09:34) belongs to $R$. 
 The degree of this relation is 5, and its domain are the set of all
@@ -279,8 +281,19 @@ Reference: https://www.flightaware.com/live/map
 
 ### Databases and relations
 
+Application of relation to be used in relational data model.
+
 Relational data model is a data model based on the concept of a 
 relation.
+
+(Silberschatz et al., 2020) - Database System Concepts, 7th Ed.   
+A **database-management system (DBMS)** is a collection of 
+interrelated data and a set of programs to access those data. 
+The collection of data, usually referred to as the **database**, 
+contains information relevant to an enterprise. 
+The primary goal of a DBMS is to provide a way to store and
+retrieve database information that is both _convenient_ and 
+_efficient_.
 
 **Table 1**: `students`
 | `student_name` | `id_number` | `major`              | `gpa` |
@@ -292,14 +305,19 @@ relation.
 | Rasyid         | 11100501    | Informatics          | 3.90  |
 | Stefani        | 18100102    | Digital business     | 2.99  | 
 
-(Silberschatz et al., 2020) - Database System Concepts, 7th Ed.   
-A **database-management system (DBMS)** is a collection of 
-interrelated data and a set of programs to access those data. 
-The collection of data, usually referred to as the **database**, 
-contains information relevant to an enterprise. 
-The primary goal of a DBMS is to provide a way to store and
-retrieve database information that is both _convenient_ and 
-_efficient_.
+Table is another representation of a relation, we can write the above
+table as a relation
+
+$$
+\begin{align*}
+  R = \{
+    &(\text{Ahmad}, 10100201, \text{Information systems}, 3.88), \\
+    &(\text{Andi}, 01100304, \text{Physics}, 3.45), 
+    \ldots
+  \}
+\end{align*}
+$$
+
 
 - **records**.   
   Each row in the above table is called record. The record are
@@ -348,11 +366,35 @@ _efficient_.
   $n$-arry relation $R$ to the $n$-ary relation of all $n$-tuples from
   $R$ that satisfy the condition $C$.
 
+  **Example**    
+  $C$: is `major` Information Systems?   
+
+  $$
+  \begin{align*}
+    S = \{
+      &(\text{Ahmad}, 10100201, \text{Information systems}, 3.88), \\
+      &(\text{Candra}, 10100301, \text{Information system}, 3.49)
+    \}
+  \end{align*}
+  $$
+  
+  | `student_name` | `id_number` | `major`              | `gpa` |
+  |----------------|-------------|----------------------|-------|
+  | Ahmad          | 10100201    | Information systems  | 3.88  |
+  | Candra         | 10100301    | Information system   | 3.49  |
+
+
 - Projection     
   The _projection_ $P_{i_1, i_2, \ldots, i_m}$ where 
   $i_1 < i_2 < \ldots < i_m$, 
   maps the $n$-tuple $(a_1, a_2, \ldots, a_n)$ to the $m$-tuple 
   $(a_{i_1}, a_{i_2}, \ldots, a_{i_m})$ where $m \leq n$.
+
+  **Example**   
+  What is the results of $P_{3, 4}$?
+
+
+  What is the result of $P_{1, 2, 4}$?
 
 - Join     
   Let $R$ be a relation of degree $m$ and $S$ a relation of degree $n$. 
@@ -363,6 +405,12 @@ _efficient_.
   $(a_1, a_2, \ldots, a_{m-p}, c_1, c_2, \ldots, c_p)$ belongs to $R$ and
   the $n$-tuple $(c_1, c_2, \ldots, c_p, b_1, b_2, \ldots, b_{n-p})$
   belongs to $S$.
+
+  **Example**    
+  What is the results when the join operator $J_2(R, S)$ is used to combine the relation $R = $`teaching_assignment` (Table 5)
+  and the relation $S = $`class_schedule` (Table 6)?
+
+
 
 
 **Table 2**: `gpas`
